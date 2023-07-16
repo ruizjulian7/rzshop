@@ -111,6 +111,18 @@ h3{
 }
 }
 
-
-/* Responsive 428px (iPhone 11,12,13,14 Pro Max / Plus */
-
+/* Responsive 414px (iPhone 11 Pro Max)  */
+@media(max-width:414px){
+    /* Shop / Tienda */
+    .shop-rz{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+        padding-left: 5rem;
+        margin-bottom: 1rem;
+    }
+    .nav-cart{
+        margin-left: 10rem;
+    }
+    }
