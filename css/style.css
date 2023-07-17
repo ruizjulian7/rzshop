@@ -9,7 +9,7 @@ h1{
     font-size: 70px;
     font-family: 'Orbitron', sans-serif;
 }
-/* Tittle animation / Animación de título */
+/* Tittle animation / Animación de t */
 .rotate-in-center {
 	-webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -95,6 +95,8 @@ h3{
     border-radius: 5rem;
     margin-left: 3.5rem;
     background-color: #bbff009b;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 17px;
 }
 .shop-rz button:hover{
     height: 50px;
