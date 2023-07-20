@@ -46,16 +46,31 @@
 // let divide = precioi12 / costEnvio; 
 
 
+// PRODUCTS //
 
-const btnCart = document.querySelector (".shop-rz")
-const containerCartProducts = document.querySelector("article-shop")
+const products = [
+    { name: "a34", price: 159.999 },
+    { name: "a03", price: 99.999 },
+    { name: "s23u", price: 499.999 },
+    { name: "a54", price: 210.999 },
+    { name: "a23", price: 114.999 },
+    { name: "zflip", price: 328.999 },
+]; 
 
-btnCart.addEventListener("click", () =>{
-    containerCartProducts.classList.toggle(hidden-cart)
-}) 
+products.forEach((product) => {
+    console.log(product.name);
+});
 
 
-const cartInfo = documente.querySelector(".article-shop")
+// const btnCart = document.querySelector (".shop-rz")
+// const containerCartProducts = document.querySelector("article-shop")
+
+// btnCart.addEventListener("click", () =>{
+//     containerCartProducts.classList.toggle(hidden-cart)
+// }) 
+
+
+// const cartInfo = documente.querySelector(".article-shop")
 
 
 
