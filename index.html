@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta -->
+    <!------ Meta ------>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Titulo -->
+    <!------ Titulo ------>
     <title>RzShop</title>
 
-    <!-- Google Fonts -->
+    <!------ Google Fonts ------>
     <link rel="shortcut icon" href="./assets/img/icon-page.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,23 +16,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Prompt:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
 
-    <!-- JavaScript -->
-    <script src="./javascript.js"></script>
-
-    <!-- Bootstrap -->
+    <!------ Bootstrap ------>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 
-    <!-- Css -->
+    <!------ Css ------>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
 
-        <!-- Tittle / Título -->
+        <!----- Tittle / Título ----->
         <h1><img class="rotate-in-center" src="./assets/img/icons/rzrepair-logo.png" alt="">Shop</h1>
         
-        <!-- Navbar / Barra de navegación -->
+        <!------ Navbar / Barra de navegación ------>
         <section class="navbar-index">
             <div>
                 <nav>
@@ -40,65 +37,117 @@
                         <div class="nav-list">
                             <a href="https://www.instagram.com/rzrepair/" target="_blank">Reparaciones</a>
                         </div>
-                        <div class="nav-cart">
-                            <a href=""><img src="./assets/img/icons/shopcart.png" alt=""></a>
-                        </div>
                     </ol>
                 </nav>
             </div>
         </section>
+
+        <!------ Subscription / Suscripción  ------>
         
+        <section class="form-subscription">
+            <form id="formulario">
+            <label for="nombre">
+                Nombre
+                <input type="text" name="nombre" id="nombre" placeholder="..." />
+            </label>
+            <label for="email">
+                Email:
+                <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="..."
+                />
+                <small id="mensaje"></small>
+            </label>
+            <input type="submit" value="Enviar" class="btn btn-success" />
+            <input type="button" value="Borrar" class="btn btn-danger" onclick="borrarCampos()">
+            </form>
+        </section>
+
+        <!------ Shopping cart / Carro de compra ------>
+
+        <section class="shop-car">
+            <a href=""><img src="./assets/img/icons/shopcart.png" alt=""></a>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                    <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablabody">
+                        <!-- aqui tabla carrito -->
+                    </tbody>
+                    </table>
+                    <h4 id="total">Total $</h4>
+        </section>
     </header>
+
     <main>
-
-        <!-- Articles / Stock -->
-
-        <div>
-        <section class="shop-rz">
-            <div class="article-shop">
-                <a href="./pagconstruccion.html"><img src="./assets/img/phones/galaxya23/a23-blanco-frente-rotado.png" alt=""></a>
-                <h3>Samsung A03 Core</h3>
-                <button>$ 82.599</button>
+        <!------ Articulos en Stock (Bootstrap) ------>
+        <section id="misprods" class="row"> 
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/phones/galaxya23/a23-blanco-frente-rotado.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Samsung A23</h5>
+                    <p class="card-text">$82.999</p>
+                    <button class="btn btn-dark compra">¡Lo quiero!</button>
+                </div>
             </div>
-            <div class="article-shop">
-                <a href="./pagconstruccion.html"><img src="./assets/img/phones/galaxya34/samsung_a34_graphite-voucher-disc-128_1.png" alt=""></a>
-                <h3>Samsung A34 5G</h3>
-                <button>Comprar</button>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/phones/galaxya34/samsung_a34_graphite-voucher-disc-128_1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Samsung A34</h5>
+                <p class="card-text">$159.999</p>
+                <button class="btn btn-dark compra">¡Lo quiero!</button>
+                </div>
             </div>
-            <div class="article-shop">
-                <a href="./pagconstruccion.html"><img src="./assets/img/phones/Samsung Z Flip 4 5G/flip4-graphite-frenterotado_13.png" alt=""></a>
-                <h3>Samsung Z Flip 4 5G</h3>
-                <button>Comprar</button>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/phones/Samsung Z Flip 4 5G/flip4-graphite-frenterotado_13.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Samsung Z Flip 4</h5>
+                <p class="card-text">$399.999</p>
+                <button class="btn btn-dark compra">¡Lo quiero!</button>
+                </div>
             </div>
-        </section>
-        <section class="shop-rz">
-            <div class="article-shop">
-                <a href="./pagconstruccion.html"><img src="./assets/img/phones/s23/s23ultra.png" alt=""></a>
-                <h3>Samsung S23 Ultra</h3>
-                <button>Comprar</button>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/phones/s23/s23ultra.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Samsung S23 Ultra</h5>
+                <p class="card-text">$599.999</p>
+                <button class="btn btn-dark compra">¡Lo quiero!</button>
+                </div>
             </div>
-            <div class="article-shop">
-                <a href="./pagconstruccion.html"><img src="./assets/img/phones/a54/a54.png" alt=""></a>
-                <h3>Samsung A54 5G</h3>
-                <button>Comprar</button>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/phones/a54/a54.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Samsung A54</h5>
+                <p class="card-text">$209.999</p>
+                <button class="btn btn-dark compra">¡Lo quiero!</button>
+                </div>
             </div>
-            <div class="article-shop">
-                <a href="./pagconstruccion.html"><img src="./assets/img/phones/s23/s23-5g.png" alt=""></a>
-                <h3>Samsung S23 5G</h3>
-                <button>Comprar</button>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/phones/s23/s23-5g.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Samsung S23</h5>
+                <p class="card-text">$425.999</p>
+                <button class="btn btn-dark compra">¡Lo quiero!</button>
+                </div>
             </div>
-        </section>
-        </div>
+        </section> 
     </main>
-
-    <!-- Scripts / Bootstrap -->
-
-    <script src="../javascript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    </main>
+    
     <footer>
         
     </footer>
+
+    <!------ Scripts / Bootstrap ------>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!------ Mi Script ------>
+    <script src="productos.js"></script>
+    <script src="logica.js"></script>
 </body>
 </html>

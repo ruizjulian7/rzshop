@@ -41,7 +41,6 @@ h1{
     }
 }
 
-
 h3{
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
@@ -75,35 +74,49 @@ h3{
     color: rgb(86, 0, 225);
 }
 
+/* Subscription / Suscripción */
+
+.form-subscription{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* Shopping cart / Carro de compras */
+
+.shop-car{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin: 1rem 0rem 2rem 29rem;
+}
+
 /* Shop / Tienda */
 
 main{
     display: flex;
+    gap: 2rem;
     justify-content: center;
 }
 
-/* Buy button / Botón de compra */
-.shop-rz{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 4rem;
-}
-.shop-rz button{
+/* Shop RZ CSS */
+/* .shop-rz button{
     height: 50px;
     width: 140px;
     border-radius: 5rem;
     margin-left: 3.5rem;
-    background-color: #bbff009b;
+    background-color: #bbff0083;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 17px;
+    font-size: 20px;
 }
 .shop-rz button:hover{
     height: 50px;
     width: 140px;
     border-radius: 5rem;
     margin-left: 3.5rem;
-    background-color: #bbff00;
+    color: black;
+    font-size: 20px;
+    background-color: #bbff00cf;
 }
 .article-shop{
     justify-content: center;
@@ -116,17 +129,58 @@ main{
     padding-top: 0.3rem;
 }
 .article-shop:hover{
-    background-color: #bbff0018;
+    background-color: #bbff00;
     height: 400px;
     width: 250px;
     box-shadow: 0px 0px 10px rgb(95, 152, 37);
     padding-top: 0.3rem;
 }
+.article-shop h3{
+    font-size: 25px;
+    color: #000000;
+}
+.article-shop p{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-align: center;
+} */
 
+/* ----- Bootstrap cards ----- */
+
+.card{
+    border-radius: 1rem;
+    text-align: center;
+}
+.card:hover{
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(102, 102, 102, 0.526);
+}
+.card h5{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 25px;
+}
+.card p{
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #bbff0041;
+    border-radius: 2rem;
+}
+.card button{
+    border-radius: 5rem;
+    background-color: black;
+    font-size: 16px;
+}
+.card button:hover{
+    border-radius: 5rem;
+    background-color: black;
+    box-shadow: 1px 1px 6px #bbff00ab;
+}
 
 /* ========================================================================================================== */
 /* ==============================================RESPONSIVE================================================== */
 /* ========================================================================================================== */
+
 
 @media (min-width:768px){
     main{
@@ -145,17 +199,17 @@ main{
         display: flex;
         flex-direction: column;
         border-radius: 1rem;
-        height: 400px;
+        height: 470px;
         width: 250px;
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.557);
         padding-top: 0.3rem;
     }
     .article-shop:hover{
-        background-color: #bbff0018;
-        height: 400px;
+        background-color: #bbff0009;
+        height: 471px;
         width: 250px;
         box-shadow: 0px 0px 10px rgb(95, 152, 37);
         padding-top: 0.3rem;
     }
     
-}
+} 
