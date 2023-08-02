@@ -1,3 +1,16 @@
+/* COLORS / COLORES
+
+#4592af;
+#bbff00;
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 
 /* Tittles / Titulos */
 h1{
@@ -46,16 +59,34 @@ h3{
     font-family: 'Rajdhani', sans-serif;
 }
 
+/* Front page / Portada */
+
+.container{
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+.container img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
 /* Navbar / Barra de navegación */
 
 .navbar-index{
     background-color: #bbff0054;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.144);
 }
 .navbar-index nav ol{
     font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
     list-style-type: none;
     display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    gap: 2rem;
 }
 .nav-list a{
     text-decoration: none;
@@ -79,6 +110,7 @@ h3{
 .form-subscription{
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -86,70 +118,29 @@ h3{
 
 .shop-car{
     display: flex;
-    justify-content: center;
-    width: 1000px;
-    margin: 1rem 0rem 2rem 29rem;
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
-/* Shop / Tienda */
-
-main{
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-}
-
-/* Shop RZ CSS */
-/* .shop-rz button{
-    height: 50px;
-    width: 140px;
-    border-radius: 5rem;
-    margin-left: 3.5rem;
-    background-color: #bbff0083;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
-}
-.shop-rz button:hover{
-    height: 50px;
-    width: 140px;
-    border-radius: 5rem;
-    margin-left: 3.5rem;
-    color: black;
-    font-size: 20px;
-    background-color: #bbff00cf;
-}
-.article-shop{
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    height: 400px;
-    width: 250px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.557);
-    padding-top: 0.3rem;
-}
-.article-shop:hover{
-    background-color: #bbff00;
-    height: 400px;
-    width: 250px;
-    box-shadow: 0px 0px 10px rgb(95, 152, 37);
-    padding-top: 0.3rem;
-}
-.article-shop h3{
-    font-size: 25px;
-    color: #000000;
-}
-.article-shop p{
-    font-size: 30px;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-    text-align: center;
-} */
 
 /* ----- Bootstrap cards ----- */
-
+/* Shop / Tienda */
+.row{
+    justify-content: center;
+    margin: 0rem 25rem 0rem 25rem;
+    gap: 2rem;
+}
+.articles{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .card{
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     text-align: center;
 }
 .card:hover{
@@ -172,9 +163,25 @@ main{
     font-size: 16px;
 }
 .card button:hover{
+    font-size: 15px;
     border-radius: 5rem;
     background-color: black;
-    box-shadow: 1px 1px 6px #bbff00ab;
+}
+
+.btn-toolbar{
+    justify-content: center;
+}
+
+/* ----- Footer ----- */
+
+footer{
+    background-color: #4592af;
+    padding: 3rem 0rem 3rem 0rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    font-weight: 500;
 }
 
 /* ========================================================================================================== */

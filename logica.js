@@ -65,7 +65,7 @@ function renderizarProductos(listaProds){
             <img src="${prod.foto}" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">${prod.nombre}</h5>
-                <p class="card-text">${prod.precio}</p>
+                <p class="card-text">$ ${prod.precio}</p>
                 <button id=${prod.id} class="btn btn-dark compra">¡Lo quiero!</button>
             </div>
         </div>
