@@ -32,6 +32,6 @@ const productos = [{
     id: 6,
     foto: "assets/img/phones/s23/s23-5g.png",
     nombre: "Sam    sung S23",
-    precio: 425999
+    precio: 425.999
 }
 ];

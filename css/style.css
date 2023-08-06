@@ -11,17 +11,84 @@
     box-sizing: border-box;
 }
 
+header{
+}   
+
+main{
+    margin: 0rem 15rem 0rem 15rem;
+}
 
 /* Tittles / Titulos */
 h1{
-    background-color: black;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    color: #bbff00;
     text-align: center;
-    font-size: 70px;
+    background-color: rgb(0, 0, 0);
+    padding: 1rem 0rem 1rem 0rem;
+    color: #bbff00;
+    font-size: 60px;
     font-family: 'Orbitron', sans-serif;
 }
+
+/* Front page / Portada */
+
+.container{
+    width: 75vw;
+    max-width: 1400px;
+    min-width: 320px;
+    margin: auto;
+}
+.container img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar / Barra de navegación */
+
+nav{
+    margin-top: -0.5rem;
+    background-color: #4592af;
+    height: 80px;
+    width: 100%;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
+}
+nav ul{
+    float: right;
+    margin-right: 3rem;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background-color: #bbff00;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 4rem;
+    cursor: pointer;
+    display: none;
+}
+.checkbtn:hover{
+    color: #bbff00;
+}
+#check{
+    display: none;
+}
+section
 
 /* Tittle animation / Animación de t */
 
@@ -54,56 +121,6 @@ h1{
     }
 }
 
-h3{
-    text-align: center;
-    font-family: 'Rajdhani', sans-serif;
-}
-
-/* Front page / Portada */
-
-.container{
-    width: 75vw;
-    max-width: 1000px;
-    min-width: 320px;
-    margin: auto;
-}
-.container img{
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
-}
-
-/* Navbar / Barra de navegación */
-
-.navbar-index{
-    background-color: #bbff0054;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.144);
-}
-.navbar-index nav ol{
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 0.5rem;
-    gap: 2rem;
-}
-.nav-list a{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin-top: 0.6rem;
-    color: black;
-}
-.nav-list a:hover{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin-top: 0.6rem;
-    color: rgb(86, 0, 225);
-}
 
 /* Subscription / Suscripción */
 
@@ -188,35 +205,107 @@ footer{
 /* ==============================================RESPONSIVE================================================== */
 /* ========================================================================================================== */
 
+/* ----- RESPONSIVE NAVBAR ----- */
+@media(max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        margin-top: 6.5rem;
+        border-radius: 1rem;
+        margin-bottom: 6rem;
+        position: fixed;
+        width: 50%;
+        height: 15%;
+        background-color: #4592af;
+        top: 80px;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #bbff00;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }  
+}
+
+
+/* ----- RESPONSIVE 1366px ----- */
+
+@media (min-width:1366x){
+    .row{
+        justify-content: center;
+        margin: 0rem 12rem 0rem 12rem;
+        gap: 2rem;
+    }
+} 
+
+/* ----- RESPONSIVE 768px ----- */
 
 @media (min-width:768px){
-    main{
-        display: flex;
+    .row{
         justify-content: center;
-        flex-direction: row;
+        margin: 0rem 12rem 0rem 12rem;
+        gap: 2rem;
     }
-    .shop-rz{
-        display: flex;
-        flex-direction: row;
-        gap: 5rem;
-        margin-bottom: 4rem;
-    }
-    .article-shop{
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        border-radius: 1rem;
-        height: 470px;
-        width: 250px;
-        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.557);
-        padding-top: 0.3rem;
-    }
-    .article-shop:hover{
-        background-color: #bbff0009;
-        height: 471px;
-        width: 250px;
-        box-shadow: 0px 0px 10px rgb(95, 152, 37);
-        padding-top: 0.3rem;
-    }
-    
 } 
+
+/* ----- RESPONSIVE 425px ----- */
+
+@media (min-width:425px){
+    .row{
+        justify-content: center;
+        margin: 0rem 2rem 0rem 2rem;
+        gap: 2rem;
+    }
+} 
+
+/* ----- RESPONSIVE 414px ----- */
+
+@media (min-width:414px){
+    .row{
+        justify-content: center;
+        margin: 0rem 2rem 0rem 2rem;
+        gap: 2rem;
+    }
+} 
+
+/* ----- RESPONSIVE 375px ----- */
+
+@media (min-width:375px){
+    .row{
+        justify-content: center;
+        margin: 0rem 2rem 0rem 2rem;
+        gap: 2rem;
+    }
+} 
+
+/* ----- RESPONSIVE 320px ----- */
+
+@media (max-width:320px){
+    .row{
+        justify-content: center;
+        margin: 0rem 2rem 0rem 2rem;
+        gap: 2rem;
+    }
+}  
+
+
+
