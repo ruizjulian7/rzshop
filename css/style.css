@@ -218,12 +218,11 @@ footer{
     }
     ul{
         margin-top: 6.5rem;
-        border-radius: 1rem;
-        margin-bottom: 6rem;
+        margin-bottom: 2rem;
         position: fixed;
-        width: 50%;
-        height: 15%;
-        background-color: #4592af;
+        width: 30%;
+        height: 100%;
+        background-image: linear-gradient(to right, #0c6a8e, #1f7496, #2d7e9e, #3988a7, #4592af);
         top: 80px;
         left: -100%;
         text-align: left;
@@ -247,65 +246,6 @@ footer{
 }
 
 
-/* ----- RESPONSIVE 1366px ----- */
-
-@media (min-width:1366x){
-    .row{
-        justify-content: center;
-        margin: 0rem 12rem 0rem 12rem;
-        gap: 2rem;
-    }
-} 
-
-/* ----- RESPONSIVE 768px ----- */
-
-@media (min-width:768px){
-    .row{
-        justify-content: center;
-        margin: 0rem 12rem 0rem 12rem;
-        gap: 2rem;
-    }
-} 
-
-/* ----- RESPONSIVE 425px ----- */
-
-@media (min-width:425px){
-    .row{
-        justify-content: center;
-        margin: 0rem 2rem 0rem 2rem;
-        gap: 2rem;
-    }
-} 
-
-/* ----- RESPONSIVE 414px ----- */
-
-@media (min-width:414px){
-    .row{
-        justify-content: center;
-        margin: 0rem 2rem 0rem 2rem;
-        gap: 2rem;
-    }
-} 
-
-/* ----- RESPONSIVE 375px ----- */
-
-@media (min-width:375px){
-    .row{
-        justify-content: center;
-        margin: 0rem 2rem 0rem 2rem;
-        gap: 2rem;
-    }
-} 
-
-/* ----- RESPONSIVE 320px ----- */
-
-@media (max-width:320px){
-    .row{
-        justify-content: center;
-        margin: 0rem 2rem 0rem 2rem;
-        gap: 2rem;
-    }
-}  
 
 
 
