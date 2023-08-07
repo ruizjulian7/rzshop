@@ -1,0 +1,41 @@
+
+
+
+@media(max-width: 858px){
+    .row{
+        justify-content: center;
+        margin: 0rem 5rem 0rem 5rem;
+        gap: 2rem;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        margin-top: 6.4rem;
+        margin-bottom: 2rem;
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: #1d9acc;
+        top: 80px;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #bbff00;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }  
+}
+
