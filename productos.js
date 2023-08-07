@@ -1,6 +1,6 @@
 const productos = [{
     id: 1,
-    foto: "/assets/img/phones/galaxya23/a23-blanco-frente-rotado.png",
+    foto: "assets/img/phones/galaxya23/a23-blanco-frente-rotado.png",
     nombre: "Samsung A23",
     precio: 82.599
 },
