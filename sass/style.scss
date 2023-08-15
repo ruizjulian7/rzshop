@@ -417,22 +417,8 @@ form button:hover{
 @media(min-width: 1366px){
     .row{
         justify-content: center;
-        margin: 0rem 15rem 0rem 15rem;
+        margin: 0rem 20rem 0rem 20rem;
         gap: 2rem;
-    }
-    .articles{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .card{
-        border-radius: 0.5rem;
-        text-align: center;
-        body.dark & {
-            background: rgb(46, 46, 46);
-            border-style: solid;
-            border-color: white;
-        }
     }
 }
 
