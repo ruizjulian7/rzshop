@@ -420,6 +420,25 @@ form button:hover{
         margin: 0rem 20rem 0rem 20rem;
         gap: 2rem;
     }
+    .articles{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .card h5{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 25px;
+    }
+    .card p{
+        font-size: 25px;
+        font-weight: 600;
+        background-color: #bbff0041;
+        border-radius: 2rem;
+        body.dark & {
+            background: #bbff00;
+            color: black;
+        }
+    }
 }
 
 /* ----- RESPONSIVE NAVBAR ----- */
