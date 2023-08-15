@@ -413,11 +413,16 @@ form button:hover{
 /* ==============================================RESPONSIVE================================================== */
 /* ========================================================================================================== */
 
-@media(max-width: 1365px){
+@media(max-width: 1366px){
     .row{
         justify-content: center;
         margin: 0rem 1rem 0rem 1rem;
         gap: 2rem;
+    }
+    .articles{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
     }
 }
 
