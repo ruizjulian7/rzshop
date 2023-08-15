@@ -33,7 +33,7 @@ main{
 
 /* Tittles / Titulos */
 h1{
-    background-image: url("/assets/img/backgrounds/bg-tech2");
+    background-image: url("/assets/img/backgrounds/bg-tech2.png");
     background-position: 77%;
     background-color: #ffffff;
     text-align: center;
@@ -44,7 +44,7 @@ h1{
     font-family: 'Orbitron', sans-serif;
     text-shadow: 2px 4px 5px #4b4b4b60;
     body.dark & {
-        background-image: url("/assets/img/backgrounds/bg-tech2");
+        background-image: url("/assets/img/backgrounds/bg-tech2.png");
         color: #bbff00;
         background: #000000;
     }
