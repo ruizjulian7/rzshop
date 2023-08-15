@@ -422,7 +422,7 @@ form button:hover{
     }
     .articles{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
     }
     .card h5{
