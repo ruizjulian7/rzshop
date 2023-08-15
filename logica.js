@@ -85,11 +85,10 @@ function agregarACarrito(producto){
     alert('Agregaste '+producto.nombre+' al carrito');
     tablaBody.innerHTML +=`
         <tr>
-            <td>${producto.id}</td>
             <td>${producto.nombre}</td>
             <td>${producto.precio}</td>
         </tr>
     `;
 }
 
-
+item.getElementsByClassName('btn-eliminar')[0].addEventListener('click', eliminarItemCarrito);

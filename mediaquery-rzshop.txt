@@ -1,0 +1,61 @@
+/* ----- RESPONSIVE 1366px ----- */
+
+@media (min-width:1366x){
+    .row{
+        justify-content: center;
+        margin: 0rem 12rem 0rem 12rem;
+        gap: 2rem;
+    }
+} 
+
+/* ----- RESPONSIVE 768px ----- */
+
+@media (min-width:768px){
+    .row{
+        justify-content: center;
+        margin: 0rem 12rem 0rem 12rem;
+        gap: 2rem;
+    }
+} 
+
+/* ----- RESPONSIVE 425px ----- */
+
+@media (min-width:425px){
+    .row{
+        justify-content: center;
+        margin: 0rem 2rem 0rem 2rem;
+        gap: 2rem;
+    }
+} 
+
+/* ----- RESPONSIVE 414px ----- */
+
+@media (min-width:414px){
+    .row{
+        justify-content: center;
+        margin: 0rem 2rem 0rem 2rem;
+        gap: 2rem;
+    }
+} 
+
+/* ----- RESPONSIVE 375px ----- */
+
+@media (min-width:375px){
+    .row{
+        justify-content: center;
+        margin: 0rem 2rem 0rem 2rem;
+        gap: 2rem;
+    }
+} 
+
+/* ----- RESPONSIVE 320px ----- */
+
+@media (min-width:320px){
+    .row{
+        justify-content: center;
+        margin: 0rem 2rem 0rem 2rem;
+        gap: 2rem;
+    }
+}  
+
+
