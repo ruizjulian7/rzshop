@@ -23,21 +23,19 @@ main {
 }
 
 /* Tittles / Titulos */
+h1 img {
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+}
+
 h1 {
   background-image: url("/assets/img/backgrounds/bg-tech2.png");
   background-position: 77%;
   background-color: #ffffff;
   text-align: center;
-  padding: 1rem 0rem 1rem 0rem;
-  color: black;
-  font-size: 60px;
-  font-weight: 1000;
-  font-family: "Orbitron", sans-serif;
-  text-shadow: 2px 4px 5px rgba(75, 75, 75, 0.3764705882);
 }
 body.dark h1 {
   background-image: url("/assets/img/backgrounds/bg-tech2.png");
-  color: #bbff00;
   background: #000000;
 }
 
@@ -537,6 +535,18 @@ form button:hover {
 /* ========================================================================================================== */
 /* ==============================================RESPONSIVE================================================== */
 /* ========================================================================================================== */
+@media (max-width: 1366px) {
+  .row {
+    justify-content: center;
+    margin: 0rem 1rem 0rem 1rem;
+    gap: 2rem;
+  }
+  .articles {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
 /* ----- RESPONSIVE NAVBAR ----- */
 @media (max-width: 952px) {
   nav ul li a {

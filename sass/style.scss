@@ -34,20 +34,17 @@ main{
 }
 
 /* Tittles / Titulos */
+h1 img{
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+}
 h1{
     background-image: url("/assets/img/backgrounds/bg-tech2.png");
     background-position: 77%;
     background-color: #ffffff;
     text-align: center;
-    padding: 1rem 0rem 1rem 0rem;
-    color: black;
-    font-size: 60px;
-    font-weight: 1000;
-    font-family: 'Orbitron', sans-serif;
-    text-shadow: 2px 4px 5px #4b4b4b60;
     body.dark & {
         background-image: url("/assets/img/backgrounds/bg-tech2.png");
-        color: #bbff00;
         background: #000000;
     }
 }
