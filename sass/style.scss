@@ -546,6 +546,18 @@ form button:hover{
 /* ==============================================RESPONSIVE================================================== */
 /* ========================================================================================================== */
 
+@media(max-width: 1366px){
+    .row{
+        justify-content: center;
+        margin: 0rem 1rem 0rem 1rem;
+        gap: 2rem;
+    }
+    .articles{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
 
 /* ----- RESPONSIVE NAVBAR ----- */
 @media(max-width: 952px){
@@ -562,6 +574,7 @@ form button:hover{
         background-image: linear-gradient(to right bottom, #1996c7, #1a97c8, #1a97c8, #1b98c9, #1b98ca, #1d9acc, #1e9cce, #209ed0, #23a1d4, #26a5d8, #29a8dc, #2cace0);
         font-family: 'Courier New', Courier, monospace;
     }
+
 }
 
 @media(max-width: 858px){
@@ -605,6 +618,7 @@ form button:hover{
     #check:checked ~ ul{
         left: 0;
     }  
+
 }
 
 
